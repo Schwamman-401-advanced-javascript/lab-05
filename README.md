@@ -5,37 +5,37 @@
 ### Author: Jonathon Schwamman
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/Schwamman-401-advanced-javascript/lab-05/pull/1)
+* [travis](https://www.travis-ci.com/Schwamman-401-advanced-javascript/lab-05)
+
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* [mongoose](https://mongoosejs.com/docs/guide.html) (Mongoose)
+* [mongoDB](https://docs.mongodb.com/) (mongoDB)
 
 ### Modules
-#### `modulename.js`
+#### `categories.js`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+###### `get(id) -> object`
+Searches for a category in the database by its id and returns the category.
 
-###### `bar(array) -> array`
-Usage Notes or examples
+###### `create(record) -> object`
+Creates a new category in the database with the record parameter.
+
+###### `update(id, record) -> object`
+Updates an existing category by id with the record parameter.
+
+###### `delete(id) -> object`
+Deletes an existing category with the id.
 
 ### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+npm install
+start mongo server: `mongod --dbpath=/Users/path/to/data/db`
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+
   
 #### Tests
 * How do you run tests?
