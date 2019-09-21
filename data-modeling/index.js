@@ -33,4 +33,5 @@ let makeCategory = async () => {
 
 // Disconnect
 makeCategory()
-  .then(() => mongoose.disconnect())
+  .then(() => mongoose.disconnect());
+  
