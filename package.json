@@ -1,0 +1,21 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "watch": "jest --watchAll --coverage --verbose",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^6.4.0",
+    "jest": "^24.5.0",
+    "mongodb-memory-server": "^5.2.3",
+    "mongoose": "^5.7.1",
+    "supertest": "^4.0.2",
+    "uuid": "^3.3.3"
+  }
+}

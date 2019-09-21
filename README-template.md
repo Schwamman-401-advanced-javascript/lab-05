@@ -1,8 +1,8 @@
-# LAB - 05
+# LAB - 
 
-## Data Modeling With NoSQL Database
+## Project Name
 
-### Author: Jonathon Schwamman
+### Author: Student/Group Name
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
