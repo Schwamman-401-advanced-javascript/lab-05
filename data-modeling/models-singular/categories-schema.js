@@ -8,6 +8,7 @@ const categories = mongoose.Schema({
   description: {type: String},
 });
 
+
 // Do we need to run any lifecycle hooks/middleware?
 
 module.exports = mongoose.model('categories ', categories);
