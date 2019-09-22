@@ -40,7 +40,7 @@ class Model {
    */
   create(record) {
     // Call the appropriate mongoose method to create a new record
-    let newRecord = new Model(record);
+    let newRecord = new this.schema(record);
     console.log(newRecord);
     return newRecord.save();
   }
@@ -53,7 +53,7 @@ class Model {
    */
   update(id, record) {
     // Call the appropriate mongoose method to update a record
-    return Model.findByIdAndUpdate(id, record, { new: true });
+    return this.schema.findByIdAndUpdate(id, record, { new: true });
   }
 
   /**
@@ -63,7 +63,7 @@ class Model {
    */
   delete(id) {
     // Call the appropriate mongoose method to delete a record
-    return Model.findByIdAndDelete(id);
+    return this.schema.findByIdAndDelete(id);
   }
 
 }
